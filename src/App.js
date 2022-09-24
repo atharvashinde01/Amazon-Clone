@@ -9,6 +9,7 @@ import Checkout from './Checkout';
 import Login from './Login';
 import Payment from './Payment';
 import Orders from './Orders';
+import Categories from './Categories';
 
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
@@ -68,6 +69,7 @@ function App() {
           </Route>
           <Route path="/" exact>
             <Header />
+            <Categories/>
             <Home />
           </Route>
         </Switch>
